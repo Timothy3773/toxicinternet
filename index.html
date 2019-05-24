@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Why the Internet is toxic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&effect=anaglyph" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+</head>
+<style>
+    .verify {
+        text-align: center;
+    }
+    .verify input {
+        margin: 0;
+        color: white;
+        width: 200px;
+        font-size: 30px;
+        background-color: transparent;
+        border-top: none;
+        border-right: none;
+        box-sizing: border-box;
+        border-left: none;
+        border-bottom: 0.3px solid brown;
+    }
+    
+
+</style>
+<body>
+    <div class="verify">
+            <h2>Enter Password</h2>
+            <input type="password" id="xd">
+    </div>
+    <div class="body" hidden>
+            <h1 class="nav">Why the Internet is toxic</h1>
+            <hr class="s1">
+            <img class="internet" src="https://timothy3773.github.io/toxicinternet/yeee2.png" width="200px">
+            <h2 class="light">The internet can be used for many useful things, but can also be used in very toxic ways.</h2>
+            <h2 class="light">Firstly, the web can be almost completely anonymous, so people feel more comfortable doing things that are socially unacceptable, for example; some people raid public services for the joy, some even make offensive jokes about tragedies. Now this might be a little off-topic, but people will go as far as stalking, even <strong>murder</strong> <sup>(See example 1)</sup> for others to watch. Some people leak personnel information just because they can. <sup>(See example 2)</sup> 
+            <br>
+            <div style="margin: 7px;">Examples;</div><ul style="margin: 0; list-style-type: decimal">
+        <li><a href="https://en.wikipedia.org/wiki/Dark_web">The wiki for the <strong>Dark Web</strong></a></li>
+        <li><a href="https://v3rmillion.net/">v3rmillion</a> (A hacking forum)</li>
+        <li><a href="https://www.4chan.org/">4chan</a> (if you browse long enough, you'll see what I mean)</li>
+            </ul>
+            </h2>
+            <br>
+            <h2 class="light">Secondly, you're connected to literally everyone with a computer, so you're bound to run into people you'll really wanna argue with.
+                Everyone has a different mindset, some will harass you until they are classified <q>right</q>, and then people try to stop that person, leading to chaos. (Trust me, I've seen it happen)
+                Some people will oppress others to be #1, and will even target <i>less-intelligent</i>. There are a lot of people online who will discriminate others for satisfaction, and in some cases, harass someone until they fear ever going outside.
+            </h2>
+    </div>
+    <div class="kill_agent" hidden style="text-align: center; margin: 0;">
+        <h2 class="h2o" style="margin: 0;">MEMETIC KILL AGENT ACTIVATED</h2>
+        <img class="memetic" id="xdd" src="https://i.kym-cdn.com/photos/images/original/000/759/678/a28.jpg" hidden style="margin: 0;">
+    </div>
+
+</body>
+<script>
+    $().ready(win => {
+        let colors = ["#4087ED", "#F9A532", "#F04747"]
+        $(".nav").css("background-color", colors[Math.floor(Math.random() * colors.length)])
+    })
+
+    $("#xd").change((e) => {
+        if (e.target.value == "7734"){
+            $(".body").removeAttr("hidden")
+            $(".verify").remove()
+        }else{
+            $(".verify").remove()
+            $(".kill_agent").show(2000)
+            setTimeout(() => {
+                $(".h2o").hide(500)
+                $(".memetic").show(2300)
+            }, 4000)
+        }
+    })
+</script>
+</html>

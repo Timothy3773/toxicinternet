@@ -52,10 +52,6 @@
                 Some people will oppress others to be #1, and will even target <i>less-intelligent</i>. There are a lot of people online who will discriminate others for satisfaction, and in some cases, harass someone until they fear ever going outside.
             </h2>
     </div>
-    <div class="kill_agent" hidden style="text-align: center; margin: 0;">
-        <h2 class="h2o" style="margin: 0;">MEMETIC KILL AGENT ACTIVATED</h2>
-        <img class="memetic" id="xdd" src="https://i.kym-cdn.com/photos/images/original/000/759/678/a28.jpg" hidden style="margin: 0;">
-    </div>
 
 </body>
 <script>
@@ -70,11 +66,7 @@
             $(".verify").remove()
         }else{
             $(".verify").remove()
-            $(".kill_agent").show(2000)
-            setTimeout(() => {
-                $(".h2o").hide(500)
-                $(".memetic").show(2300)
-            }, 4000)
+            let win = window.open("./memetic.html", "", "resizable")
         }
     })
 </script>
